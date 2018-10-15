@@ -10,16 +10,17 @@ public class ArmstrongNo {
 		int x = s.nextInt();
 		int temp = x;
 		int sum = 0;
+		int a;
 		while(x>0) {
-			x = x%10;
-			x=x/10;
-			sum = sum + x*x*x;			
+			a = x%10;
+			x = x/10;
+			sum = sum + (a*a*a);
 		}
 		if(sum==temp) {
 			System.out.println("No. is Armstrong");
 		}
 		else {
-			System.out.println("No. is not Armstrong");//asahsgfagafasgfgasfg
+			System.out.println("No. is not Armstrong");
 		}
 	}
 

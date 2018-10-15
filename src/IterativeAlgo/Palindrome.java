@@ -12,10 +12,7 @@ public class Palindrome {
 		int rev = 0;
 		while(n>0) 
 		{
-			int t = n%10;
-			System.out.println(rev);
-			System.out.println("t: " + t);
-			rev = 10*rev + t;
+			rev = 10*rev + n%10;
 			n = n/10;
 		}
 		
